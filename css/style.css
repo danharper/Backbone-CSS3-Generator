@@ -1,0 +1,10 @@
+#viewer div {
+	background: #ddd;
+	border: 2px solid #ccc;
+	margin: 30px;
+	padding: 5px 20px;
+}
+
+input {
+	padding: 5px;
+}

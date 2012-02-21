@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<title>Backbone CSS3 Generator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/handlebars.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/x-handlebars-template" id="picker-template">
+		<input class="border-radius" type="range" min="0" max="60" value="{{borderRadius}}">
+		<em><span>{{borderRadius}}</span>px</em>
+	</script>
+	<script type="text/x-handlebars-template" id="viewer-template">
+		<div style="
+			-webkit-border-radius: {{borderRadius}}px;
+			-moz-border-radius: {{borderRadius}}px;
+			border-radius: {{borderRadius}}px;
+		">
+			<p>Say what?!</p>
+		</div>
+		<pre>
+			-webkit-border-radius: {{borderRadius}}px;
+			-moz-border-radius: {{borderRadius}}px;
+			border-radius: {{borderRadius}}px;
+		</pre>
+	</script>
+</head>
+<body>
+
+	<p>Hey.</p>
+
+	<div id="picker-wrap"> </div>
+
+	<div id="viewer-wrap"> </div>
+
+</body>
+</html>
